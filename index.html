@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mudi's Profile Card</title>
+  </head>
+  <body>
+    <section id="card">
+      <img
+        id="profilePic"
+        data-testid="profilePicture"
+        src="/images/passport.png"
+        alt="picture of me"
+      />
+
+      <h1 data-testid="fullName">Osamudiame Ruth Igbinoba</h1>
+      <p id="job" data-testid="jobTitle">Software Engineer at a bank</p>
+
+      <p id="email" data-testid="emailAddress">
+        <a href="mailto:ruth.igbinoba12@gmail.com">ruth.igbinoba12@gmail.com</a>
+      </p>
+      <p id="bio" data-testid="shortBio">
+        As a front-end developer with experience in HTML, CSS, JavaScript,
+        Bootstrap, Tailwind CSS, Angular and React.JS. I am passionate about
+        creating visually appealing and functional user interfaces using the
+        latest technologies and best practices.
+        <br /><br />
+
+        I have worked on various projects, including improving user interfaces,
+        developing responsive e-commerce websites, and collaborating with teams
+        to develop cross-functional websites. My hobbies are singing, sleeping,
+        reading novels and eating.
+      </p>
+
+      <ul id="socialLinks">
+        <li>
+          <a
+            data-testid="socialLinks"
+            href="https://twitter.com/Mudi_Igbinoba"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </li>
+
+        <li>
+          <a
+            data-testid="socialLinks"
+            href="https://www.linkedin.com/in/osamudiame-igbinoba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+
+        <li>
+          <a
+            data-testid="socialLinks"
+            href="https://github.com/Mudi-Igbinoba"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </li>
+      </ul>
+
+      <div>
+        <p data-testid="currentLocation" id="location">Lagos, Nigeria</p>
+        <p data-testid="currentTimeUTC" id="date"></p>
+      </div>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

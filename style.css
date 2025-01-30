@@ -1,0 +1,169 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Inter', serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  background: #2b2b2b url(/images/pattern.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  font-weight: 400;
+  padding: 5em 0;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+#card {
+  max-width: 600px;
+  max-height: 90vh;
+  background-color: rgb(31, 31, 31);
+  border-radius: 8px;
+  text-align: center;
+  padding: 3em;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  #card {
+    max-width: auto;
+    width: 80%;
+    padding: 2em;
+  }
+}
+
+#profilePic {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 639px) {
+  #profilePic {
+    width: 80px;
+    height: 80px;
+  }
+}
+h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+#job {
+  font-weight: 700;
+  color: #fb923c;
+  margin-bottom: 10px;
+}
+
+#bio {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#email {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#email a {
+  color: #fff;
+}
+
+#email a:hover,
+#email a:focus,
+#email a:active {
+  color: #fb923c;
+}
+
+#socialLinks {
+  list-style-type: none;
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media screen and (max-width: 639px) {
+  #socialLinks {
+    grid-template-columns: none;
+  }
+}
+
+#socialLinks a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  background: #333333;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 639px) {
+  #socialLinks a {
+    padding: 16px;
+  }
+}
+
+#socialLinks a:hover,
+#socialLinks a:focus,
+#socialLinks a:active {
+  color: #333333;
+  background-color: #fb923c;
+}
+
+#date {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+#location {
+  color: #fb923c;
+  font-weight: 700;
+}
